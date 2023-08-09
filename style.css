@@ -105,11 +105,22 @@ button,
   transition: all 0.3s ease !important;
 }
 
-@media (min-width:376px){
-    body{
-        background: var(--pale-blue) url("./images/pattern-background-desktop.svg")
-        no-repeat top left;
-        background-size: 100%;
-    }
-    
+.attribution {
+  text-align: center;
+  padding-block: 0.5rem;
+  background-color: var(--dark-blue);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.attribution a {
+  color: var(--desaturated-blue);
+}
+@media (min-width: 376px) {
+  body {
+    background: var(--pale-blue) url("./images/pattern-background-desktop.svg")
+      no-repeat top left;
+    background-size: 100%;
+  }
 }
