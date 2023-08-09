@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  color: var(--desaturated-blue);
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: var(--pale-blue) url("./images/pattern-background-mobile.svg")
+    no-repeat top left;
+}
+.card {
+  width: 90%;
+  max-width: 356px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 5px 30px hsla(224, 23%, 55%, 0.5);
+}
+.card__image {
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 7.5% 10%;
+  gap: 1.25rem;
+}
+.content__title {
+  font-size: 1.5rem;
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+.content__description {
+  padding: 0% 7.5%;
+}
+.content__plans {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--very-pale-blue);
+  border-radius: 1rem;
+  align-items: center;
+  padding: 5% 0%;
+}
+.content__plans__info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.content__plans__info__title {
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+.content__plans__info__change {
+  color: var(--bright-blue);
+  font-weight: 700;
+}
+.content__plans__info__change:hover {
+  color: var(--desaturated-blue);
+}
+.content__payment {
+  font-weight: 700;
+  color: white;
+  padding: 3% 0%;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--bright-blue);
+  box-shadow: 0px 10px 10px hsla(224, 23%, 55%, 0.5);
+  cursor: pointer;
+}
+.content__payment:hover {
+  opacity: 0.7;
+}
+.content__cancel {
+  border: 0px;
+  background-color: white;
+  font-weight: 700;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+.content__cancel:hover {
+  color: var(--dark-blue);
+}
+button,
+.content__plans__info__change {
+  transition: all 0.3s ease !important;
+}
+
+@media (min-width:376px){
+    body{
+        background: var(--pale-blue) url("./images/pattern-background-desktop.svg")
+        no-repeat top left;
+        background-size: 100%;
+    }
+    
+}
