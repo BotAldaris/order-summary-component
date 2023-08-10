@@ -29,8 +29,8 @@ Os usuários devem ser capazes:
 
 ### Links
 
-- URL da Solução: [Solução](https://github.com/BotAldaris/order-summary-card-solution)
-- Live Site URL: [Live url](https://botaldaris.github.io/order-summary-card-solution/)
+- URL da Solução: [Solução](https://github.com/BotAldaris/order-summary-component)
+- Live Site URL: [Live url](https://botaldaris.github.io/order-summary-component/)
 
 ### Tecnologias usadas
 
